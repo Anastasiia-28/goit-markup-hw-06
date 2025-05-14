@@ -1,0 +1,21 @@
+/* TABLET MEDIA */
+@media screen and (min-width:768px){
+    .container {
+        /* max-width: 768px; */
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .features-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 24px;
+        row-gap: 72px;
+    }
+
+    .features-list-item{
+        height: 120px;
+        flex-basis: calc((100% - 24px) / 2);
+    }
+}
