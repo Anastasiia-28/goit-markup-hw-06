@@ -60,7 +60,7 @@ background-color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .nav-list{
@@ -128,7 +128,6 @@ background-color: #FFFFFF;
     }
 
     .nav-list-link {
-        font-family: roboto;
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.02em;
@@ -139,7 +138,7 @@ background-color: #FFFFFF;
         display: block;
     }
     
-    
+
     .nav-list-link:hover,
     .nav-list-link:focus {
         color: #404bbf;
@@ -278,6 +277,7 @@ background-color: #FFFFFF;
 }
 
 .mobile-nav-list-link{
+    font-family: "Roboto",sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -291,12 +291,17 @@ background-color: #FFFFFF;
     color: #404bbf;
 }
 
+.mobile-nav-list-item:first-child .mobile-nav-list-link{
+    color: #404bbf;
+}
+
 .mobile-address-list{
     display: flex;
     flex-direction: column;
     gap: 24px;
     justify-content: flex-start;
     margin-bottom: 48px;
+    font-style: normal;
 }
 
 .mobile-contact-link{
@@ -309,6 +314,10 @@ background-color: #FFFFFF;
 
 .mobile-contact-link:hover,
 .mobile-contact-link:focus{
+    color: #4d5ae5;
+}
+
+.mobile-address-list-item:first-child .mobile-contact-link{
     color: #4d5ae5;
 }
 
@@ -347,8 +356,7 @@ background-color: #FFFFFF;
 /* hero section */
 
 .hero-section{
-    padding-top: 188px;
-    padding-bottom: 188px;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office-mob.jpg);
     min-width: 320px;
     background-repeat: no-repeat;
@@ -462,6 +470,7 @@ background-color: #FFFFFF;
 
 @media screen and (min-width:768px) {
     .hero-section{
+        padding: 112px 0;
         min-width: 768px;
         background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
@@ -505,6 +514,7 @@ background-color: #FFFFFF;
 
 @media screen and (min-width: 1158px){
     .hero-section{
+        padding: 188px 0;
         min-width: 1158px;
         background-image: linear-gradient(to bottom,
         rgba(46, 47, 66, 0.7),
@@ -626,8 +636,6 @@ background-color: #FFFFFF;
         letter-spacing: 0.02em;
         line-height: 1.2;
         color: #2E2F42;
-        margin-bottom: 8px;
-        margin-top: 32px;
         text-align: center;
         margin-bottom: 8px;
 }
